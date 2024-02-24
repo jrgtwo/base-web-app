@@ -4,7 +4,8 @@
   "description": "Node server test bed",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/jrgtwo/nodeserver/issues"
   },
-  "homepage": "https://github.com/jrgtwo/nodeserver#readme"
+  "homepage": "https://github.com/jrgtwo/nodeserver#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
+    "husky": "^9.0.11"
+  }
 }
