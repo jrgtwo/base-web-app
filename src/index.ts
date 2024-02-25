@@ -21,5 +21,5 @@ app.use(Routes.projects, ProjectsRoutes);
 app.use(Routes.users, UsersRoutes);
 
 app.listen(port, () => {
-    console.log(`Server running at  http://${host}:${port}`);
+    console.log(`Server running at  http://${host}:${port}`)
 })
