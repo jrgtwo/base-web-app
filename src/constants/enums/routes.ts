@@ -1,3 +1,7 @@
 export enum Routes {
-    'home'= '/'
+    'static'= '/static',
+    'home'= '/',
+    'about'= '/about',
+    'projects'= '/projects',
+    'users' = '/users'
 }

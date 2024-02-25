@@ -6,7 +6,7 @@ const router = express.Router();
 router.use(timeTracker);
 
 router.get('/', (req, res) => {
-    res.send('Howdy')
+    res.send('howdy');
 })
 
-export const HomeRoutes  = router;
+export const HomeRoutes  = router
