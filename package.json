@@ -9,7 +9,7 @@
     "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
-    "lint:node": "eslint --ext .ts src/**"
+    "lint:node": "eslint --env node --ext .ts src/**"
   },
   "repository": {
     "type": "git",

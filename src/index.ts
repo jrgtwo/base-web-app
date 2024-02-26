@@ -1,17 +1,17 @@
-import express from 'express'
-import 'dotenv/config'
+import express from 'express';
+import 'dotenv/config';
 
-import { 
-    AboutRoutes,
-    ProjectsRoutes,
-    HomeRoutes,
-    UsersRoutes
+import {
+  AboutRoutes,
+  ProjectsRoutes,
+  HomeRoutes,
+  UsersRoutes
 } from './router';
 import { Routes } from './constants/enums';
 
 const app = express();
-const port =  process.env.PORT || 8080;
-const host = process.env.HOST ||'localhost';
+const port = process.env.PORT || 8080;
+const host = process.env.HOST || 'localhost';
 
 app.use(Routes.static, express.static('public'));
 
@@ -21,5 +21,5 @@ app.use(Routes.projects, ProjectsRoutes);
 app.use(Routes.users, UsersRoutes);
 
 app.listen(port, () => {
-    console.log(`Server running at  http://${host}:${port}`)
-})
+  console.log(`Server running at  http://${host}:${port}`);
+});
