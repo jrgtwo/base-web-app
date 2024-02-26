@@ -1,11 +1,12 @@
-# Simple Express Server
+# Simple Monorepo using turbo
 
 `> npm i`
+`> turbo build`
+`> cd server`
+`> npm start` -> currently is in the works
 
-`> npm start`
 
-
-# Environment Setup
+# Environment Setup -> also in the works
 in the root of the project create a file named `.env` and fill in the appropriate settings
 ```
 PORT="YOUR_PORT"

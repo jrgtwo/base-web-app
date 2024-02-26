@@ -1,0 +1,10 @@
+{
+  "name": "my-local-webapp",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./dist/index.html"
+  },
+  "scripts": {
+    "build": "echo \"monorepo\""
+  }
+}
