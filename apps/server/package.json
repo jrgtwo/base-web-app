@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "cp -r ../../node_modules/@jrgtwo/webapp/dist/static/ webapp/ && tsc",
+    "build": "cp -r ../../node_modules/@jrgtwo/webapp/dist/static/ _webapp/ && tsc",
     "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
