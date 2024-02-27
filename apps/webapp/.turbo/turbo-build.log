@@ -1,6 +1,6 @@
 
 
-> my-local-webapp@1.0.0 build
+> @jrgtwo/webapp@1.0.0 build
 > echo "monorepo"
 
 monorepo

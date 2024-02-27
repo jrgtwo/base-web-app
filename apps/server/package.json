@@ -1,5 +1,5 @@
 {
-  "name": "my-local-nodejs-app",
+  "name": "@jrgtwo/node-server",
   "version": "1.0.0",
   "description": "Node server test bed",
   "main": "app.js",

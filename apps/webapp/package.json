@@ -1,5 +1,5 @@
 {
-  "name": "my-local-webapp",
+  "name": "@jrgtwo/webapp",
   "version": "1.0.0",
   "exports": {
     ".": "./dist/index.html"
