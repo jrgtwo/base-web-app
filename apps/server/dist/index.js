@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 require("dotenv/config");
-require("my-local-webapp");
 const router_1 = require("./router");
 const enums_1 = require("./constants/enums");
 const app = (0, express_1.default)();

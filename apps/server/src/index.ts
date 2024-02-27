@@ -1,6 +1,5 @@
 import express from 'express';
 import 'dotenv/config';
-import 'my-local-webapp';
 
 import {
   AboutRoutes,
