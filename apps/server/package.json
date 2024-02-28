@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Node server test bed",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "cp -r ../../node_modules/@jrgtwo/webapp/dist/static/ _webapp/ && tsc",
+    "start": "node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
     "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",

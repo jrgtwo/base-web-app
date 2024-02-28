@@ -1,1 +1,5 @@
-export default 'webapp!!'
+let webapp;
+
+webapp = () => 'webapp';
+
+export const Webapp = webapp;
