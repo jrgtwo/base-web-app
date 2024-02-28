@@ -10,7 +10,10 @@
       ]
     },
     "test": {},
-    "dev": {}
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
   },
   "globalDependencies": [],
   "globalEnv": []

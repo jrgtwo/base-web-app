@@ -19,5 +19,7 @@ export default {
     filename: './bundle.js',
     path: path.resolve('./dist/'),
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    template: "./src/index.html",
+  })],
 };
