@@ -9,4 +9,4 @@ console.log('test');
 // Render your React component instead
 // @ts-expect-error
 const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world !!! </h1>);
+root.render(<h1>Hello, world! </h1>);

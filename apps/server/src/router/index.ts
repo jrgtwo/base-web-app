@@ -1,4 +1,4 @@
-export { AboutRoutes } from './about';
-export { ProjectsRoutes } from './projects';
-export { HomeRoutes } from './home';
-export { UsersRoutes } from './users';
+export { AboutRoutes } from './about.js';
+export { ProjectsRoutes } from './projects.js';
+export { HomeRoutes } from './home.js';
+export { UsersRoutes } from './users.js';

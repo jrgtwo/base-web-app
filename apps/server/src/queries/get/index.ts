@@ -1,4 +1,4 @@
-import { GetUsers } from './users';
+import { GetUsers } from './users.js';
 
 export const Get = {
   users: GetUsers

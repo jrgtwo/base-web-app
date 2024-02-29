@@ -5,10 +5,9 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es6",
+    "module": "NodeNext",
     "allowJs": true,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "sourceMap": true
   },
   "include": [

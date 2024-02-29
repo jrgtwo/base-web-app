@@ -1,7 +1,7 @@
 import express from 'express';
-import { timeTracker } from '../middleware/timeTracker';
-import { DB } from '../database/db';
-import { Get } from '../queries/get';
+import { timeTracker } from '../middleware/timeTracker.js';
+import { DB } from '../database/db.js';
+import { Get } from '../queries/get/index.js';
 const router = express.Router();
 
 router.use(timeTracker);

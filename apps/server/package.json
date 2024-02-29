@@ -5,13 +5,13 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "start": "node --experimental-specifier-resolution=node  --loader ts-node/esm src/index.ts",
+    "start": "node --trace-warnings --experimental-import-meta-resolve=true --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
     "build": "tsc",
     "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
     "lint:node": "eslint --env node --ext .ts src/**",
-    "dev": "node --experimental-specifier-resolution=node  --loader ts-node/esm src/index.ts"
+    "dev": "node --experimental-import-meta-resolve=true --experimental-specifier-resolution=node  --loader ts-node/esm src/index.ts"
   },
   "keywords": [],
   "author": "Jonathan Ray Garcia",

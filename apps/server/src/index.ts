@@ -1,7 +1,20 @@
-import express from 'express';
-import 'dotenv/config';
+// import dotenv from 'dotenv';
+// import { fileURLToPath } from 'node:url';
+// const boom = await import.meta.resolve('@jrgtwo/shared');
+// dotenv.config({ path: fileURLToPath(`${boom}dist/dev.env`) });
+// console.log(fileURLToPath(`${boom}dev.env`));
+// console.log(boom);
+// console.log(process.env)
 
-import { catchAllHandler, errorHandler } from './server';
+
+
+import express from 'express';
+import { fileURLToPath } from 'node:url';
+import dotenv from 'dotenv';
+import { catchAllHandler, errorHandler } from './server/index.js';
+
+const ENV_PATH = import.meta.resolve('@jrgtwo/shared');
+dotenv.config({ path: fileURLToPath(`${ENV_PATH}dist/dev.env`) });
 
 const app = express();
 const port = process.env.PORT || 8080;
