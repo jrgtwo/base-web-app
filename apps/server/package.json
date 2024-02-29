@@ -2,10 +2,10 @@
   "name": "@jrgtwo/node-server",
   "version": "1.0.0",
   "description": "Node server test bed",
-  "main": "app.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "start": "node --loader ts-node/esm src/index.ts",
+    "start": "node --experimental-specifier-resolution=node  --loader ts-node/esm src/index.ts",
     "build": "tsc",
     "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -40,7 +40,8 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "my-local-webapp": "*",
+    "@jrgtwo/webapp": "*",
+    "@jrgtwo/shared": "*",
     "dotenv": "^16.4.5",
     "pg": "^8.11.3"
   },

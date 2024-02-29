@@ -2,14 +2,20 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
-  entry: './src/',
+  entry: './src/index.tsx',
   module: {
     rules: [
+
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
         exclude: /node_modules/,
-      },
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      }
     ]
   },
   resolve: {
