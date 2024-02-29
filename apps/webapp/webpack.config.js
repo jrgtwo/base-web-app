@@ -3,6 +3,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
   entry: './src/index.tsx',
+  mode: 'development',
   module: {
     rules: [
 
