@@ -1,12 +1,15 @@
 
 import React from 'react';
+
 import { createRoot } from 'react-dom/client';
+import { App } from './app/index';
 
-// Clear the existing HTML content
-document.body.innerHTML = '<div id="app"></div>';
-console.log('test');
+window.addEventListener("DOMContentLoaded", function (event) {
+  // @ts-expect-error
+  createRoot(document.getElementById("app")).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+});
 
-// Render your React component instead
-// @ts-expect-error
-const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world! </h1>);

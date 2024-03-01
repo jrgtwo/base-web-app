@@ -15,7 +15,7 @@
   "include": [
     "src/**/*.ts",
     "src/index.tsx"
-  ],
+, "src/router/routes.tsx"  ],
   "exclude": [
     "node_modules"
   ]
