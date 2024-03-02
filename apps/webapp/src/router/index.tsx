@@ -1,7 +1,8 @@
-import {
-  createBrowserRouter,
-} from 'react-router-dom';
-import { browserRouterConfig } from './routes';
+import React from 'react';
+import { RouteList } from '../constants/routes'
+import { useRoutes } from 'react-router-dom'
 
-export const router = createBrowserRouter(browserRouterConfig);
+export function Router() {
 
+  return useRoutes(RouteList);
+}

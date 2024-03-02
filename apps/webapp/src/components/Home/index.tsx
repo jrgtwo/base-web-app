@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-export function Main() {
+export function Home() {
   return (
     <section>
       <h3>This is my cool homepage, I really hope you like it :)</h3>

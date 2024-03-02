@@ -5,11 +5,12 @@ import { createRoot } from 'react-dom/client';
 import { App } from './app/index';
 
 window.addEventListener("DOMContentLoaded", function (event) {
-  // @ts-expect-error
-  createRoot(document.getElementById("app")).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
+  const appRoot = document.getElementById("app");
+  appRoot
+    ? createRoot(appRoot).render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>)
+    : null;
 });
 

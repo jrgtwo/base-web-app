@@ -1,13 +1,13 @@
 import React from 'react';
-import { RouterProvider, Route, Link } from 'react-router-dom';
-import { router } from '../router/index';
-import { Header } from '../components/Header/index';
-import { Footer } from '../components/Footer/index';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from '../router/index';
 
 export function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter >
     </>
   );
 }
