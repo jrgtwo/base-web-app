@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "NodeNext",
+    "allowJs": true,
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
